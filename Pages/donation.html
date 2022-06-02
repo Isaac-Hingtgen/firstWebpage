@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donations</title>
+        <link rel="stylesheet" href="../lookBetter.css">
+    </head>
+
+    <body>
+        <h1> The Hourly Stoic </h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="quote.html">Random Qoute</a>
+            <a href="donation.html">Donations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p> Please, enter credit card information below: </p>
+        <form action="#">
+            <fieldset>
+                <legend>Card Information</legend>
+    
+                <p>
+                    <label>First name: <input name="firstName" id="firstName"/></label>
+                </p>
+    
+                <p>
+                    <label>Last name: <input name="lastName" id="lastName"/></label>
+                </p>
+    
+                <p>
+                    <label for="cardType">Cardtype:</label>
+                    <select id="cardType" name="cardType">
+                        <option value="masterCard">Master Card</option>
+                        <option value="visa">Visa</option>
+                        <option value="americanExpress">American Express</option>
+                    </select>
+                </p>
+    
+                <p>
+                    <label>Card number: <input type="text" name="num1" id="num1" maxlength="4" size="4"/></label>
+                    <label>- <input type="text" name="num2" id="num2" maxlength="4" size="4"/></label>
+                    <label>- <input type="text" name="num3" id="num3" maxlength="4" size="4"/></label>
+                    <label>- <input type="text" name="num4" id="num4" maxlength="4" size="4"/></label>
+                </p>
+    
+                <p>
+                    <label>Expiration Date:</label>
+                    <input type="date"><br>
+                </p>
+    
+                <p>
+                    <label>Security Code: <input type="text" maxlength="3" size="3"/></label>
+                </p>
+    
+                <p>
+                    <button type="button" onclick="alert('Thank you for submitting your card information, it will not be misused in anyway')">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
